@@ -1,0 +1,33 @@
+$white:     #fff;
+$gray-base: #3c4b64;
+$gray-100:  #ebedef;
+$gray-200:  #d8dbe0;
+$gray-300:  #c4c9d0;
+$gray-400:  #b1b7c1;
+$gray-500:  #9da5b1;
+$gray-600:  #8a93a2;
+$gray-700:  #768192;
+$gray-800:  #636f83;
+$gray-900:  #4f5d73;
+$black:     #000015;
+
+
+
+$body-color: #E4E9F7;
+$sidebar-color: #FFF;
+$primary-color: #695CFE;
+$primary-color-light: #F6F5FF;
+$toggle-color: #DDD;
+$text-color: #707070;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
