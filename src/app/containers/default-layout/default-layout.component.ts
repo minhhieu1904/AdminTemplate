@@ -20,11 +20,11 @@ export class DefaultLayoutComponent implements OnInit {
       searchBtn = <Element>document.querySelector(".search-box");
 
     toggle.addEventListener("click", () => {
-      sidebar.classList.toggle("close");
+      sidebar.classList.toggle("isClose");
     });
 
     searchBtn.addEventListener("click", () => {
-      sidebar.classList.remove("close");
+      sidebar.classList.remove("isClose");
     });
   }
 
@@ -38,8 +38,13 @@ export class DefaultLayoutComponent implements OnInit {
     });
   }
 
+  removeActive() {
+    const li = document.querySelectorAll(".nav-links > li");
+    li.forEach(item => item.classList.remove("active"));
+  }
+
   toggleActive() {
-    const li = document.querySelectorAll(".nav-links > li:not(.dropdown)");
+    const li = document.querySelectorAll(".nav-links > li");
     li.forEach(item => {
       item.addEventListener("click", () => {
         item.classList.toggle("active");

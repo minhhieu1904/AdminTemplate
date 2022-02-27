@@ -1,4 +1,4 @@
-<nav class="sidebar close">
+<nav class="sidebar">
     <div id="logo">
         <div class="image-text">
             <span class="image">
@@ -22,7 +22,7 @@
             </li>
 
             <ul class="nav-links">
-                <li class="active">
+                <li class="active" (click)="removeActive()">
                     <a href="#">
                         <i class='bx bx-grid-alt'></i>
                         <span class="link_name">Dashboard</span>
@@ -58,13 +58,13 @@
                         <li><a href="#">Card Design</a></li>
                     </ul>
                 </li>
-                <li>
+                <li (click)="removeActive()">
                     <a href="#">
                         <i class='bx bx-pie-chart-alt-2'></i>
                         <span class="link_name">Analytics</span>
                     </a>
                 </li>
-                <li>
+                <li (click)="removeActive()">
                     <a href="#">
                         <i class='bx bx-line-chart'></i>
                         <span class="link_name">Chart</span>
@@ -85,19 +85,19 @@
                         <li><a href="#">Box Icons</a></li>
                     </ul>
                 </li>
-                <li>
+                <li (click)="removeActive()">
                     <a href="#">
                         <i class='bx bx-compass'></i>
                         <span class="link_name">Explore</span>
                     </a>
                 </li>
-                <li>
+                <li (click)="removeActive()">
                     <a href="#">
                         <i class='bx bx-history'></i>
                         <span class="link_name">History</span>
                     </a>
                 </li>
-                <li>
+                <li (click)="removeActive()">
                     <a href="#">
                         <i class='bx bx-cog'></i>
                         <span class="link_name">Setting</span>
